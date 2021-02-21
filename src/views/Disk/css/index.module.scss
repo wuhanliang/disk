@@ -1,0 +1,38 @@
+.cpatce{
+  padding: 16px;
+  background-Color: #fff;
+}
+
+.content{
+  margin-Left: 200px ;overflow: initial; background: #f2f8ff; padding-Right: 16px
+}
+.diskHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  .ler{
+    margin-bottom: 8px;
+  }
+  .link {
+    padding: 0;
+  }
+  .search{
+    @extend .ler;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+
+    >*{
+      margin-left: 8px;
+    }
+  }
+  .icons{
+    cursor: pointer;
+  }
+  .textRight{
+    text-align: right;
+    color: #666;
+  }
+}

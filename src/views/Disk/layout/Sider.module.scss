@@ -1,0 +1,16 @@
+.sider {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: #f2f8ff;
+    .menu {
+      background-color: #f2f8ff;
+      .menuItem{
+        &::after{
+          border-color: transparent;
+        }
+      }
+
+    }
+}

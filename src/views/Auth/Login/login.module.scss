@@ -1,0 +1,88 @@
+.authLogin {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: right;
+  position: relative;
+  .content {
+    $w: 1140px;
+    $h: 406px;
+    min-width: $w;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: $h;
+    // background: #000;
+
+    margin-top: $h / -2;
+    margin-left: $w / -2;
+    display: flex;
+    >div{
+      // flex: 50%;
+      width: 50%;
+    }
+    .description {
+      width: 40%;
+      text-align: left;
+      .title {
+        color: rgba(119, 119, 119);
+      }
+      h1{
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+      .itemList{
+        list-style: none;
+        padding-left: 0;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        >li{
+          flex: calc(100% / 3);
+          margin-bottom: 16px;
+          font-size: 15px;
+          cursor: pointer;
+          transition: all .3s;
+          &:hover {
+            >span{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+    }
+    .formData{
+      background-color: #fff;
+      height: 100%;
+      max-width: 412px;
+      // box-shadow: 0 0 10px rgba(119, 119, 119);
+      box-shadow: 0 20px 30px -16px rgba(9,9,16,0.2);
+      text-align: left;
+      padding: 30px;
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        >span{
+          padding: 0 4px;
+        }
+      }
+      .formBottom{
+        .other {
+          margin-top: 30px;
+          font-size: 24px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          >*{
+            margin: 0 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.header{
+  background-color: #f2f8ff;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  .logo{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .fl{
+      width: 40px;
+      margin-right: 6px;
+    }
+  }
+  .menu{
+    line-Height: 54px;   
+    border-bottom: transparent;
+    background-color: #f2f8ff;
+
+  }
+}
