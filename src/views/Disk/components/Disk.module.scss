@@ -1,0 +1,29 @@
+.container {
+  height: calc(100vh - 186px);
+  background-color: #fff;
+  cursor: pointer; 
+  .fileNameCol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    .fileBox{
+      display: flex;
+      align-items: center;
+      .Folder {
+        color: #eaea9c;
+        font-size: 40px;
+        margin-right: 8px;
+        margin-top: -6px;
+      }
+      .Image{
+        @extend .Folder;
+        color: #999;
+        margin-top: -2px;
+      }
+      .Video{
+        @extend .Image;
+      }
+    }
+  }
+}
